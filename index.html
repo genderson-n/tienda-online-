@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda en Línea</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mi Tienda Online</h1>
+    <nav>
+      <button id="verCarrito">🛒 Carrito (<span id="cantidad">0</span>)</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Productos</h2>
+    <div class="productos" id="listaProductos">
+      <!-- Los productos se cargan con JS -->
+    </div>
+  </main>
+
+  <!-- Carrito -->
+  <section id="carrito" class="oculto">
+    <h2>Carrito de Compras</h2>
+    <ul id="itemsCarrito"></ul>
+    <p>Total: $<span id="total">0</span></p>
+    <button id="checkout">Finalizar Compra</button>
+  </section>
+
+  <!-- Formulario de compra -->
+  <section id="formularioCompra" class="oculto">
+    <h2>Formulario de Pago</h2>
+    <form>
+      <label>Nombre:
+        <input type="text" required>
+      </label>
+      <label>Email:
+        <input type="email" required>
+      </label>
+      <label>Dirección:
+        <input type="text" required>
+      </label>
+      <button type="submit">Pagar</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
